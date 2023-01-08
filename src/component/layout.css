@@ -1,0 +1,69 @@
+.calculator{
+    border: 1px solid #A5BBDC;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    width: 400px;
+    height: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    margin: auto;
+}
+.button{
+    height: 60px;
+    padding: 5px;
+    background-color: #4DAB00;
+    border-radius: 3px;
+    border: 1px solid #B9AB2E;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #14332E;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.04));
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05);
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+}
+.button:hover{
+   background-color: #144D2E; 
+   color: #fff;
+}
+.operator{
+    color: #fff;
+    background-color: #887007;
+    border-color: #887007;
+    color: #fff;
+}
+.clear{
+    background-color: #FF3E2E;
+}
+.clear:hover{
+    background-color: #3B0907;
+}
+.eqaul-sign{
+    background-color: #006E07;
+    border: #006E07;
+    color: #fff;
+}
+.eqaul-sign:hover{
+    background-color: #77616C;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: auto
+}
+.item-box{
+    width: 23.5rem;
+    height: 80px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
