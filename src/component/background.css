@@ -1,0 +1,12 @@
+.btn{
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px 10px 30px 30px;
+    font-size: 0.9rem;
+    background-color: #0046DC;
+    color: #fff;
+
+}

@@ -5,24 +5,24 @@ import Output from './output';
 
 
 const Layout = (props) => {
-    const [input, setInput] = useState('0');
-    const [result, setResult] = useState('');
+    const [input, setInput] = useState(0);
+    const [result, setResult] = useState({});
 
     const handleClick = (e) => {
        const value = e.target.value;
        if(value === '='){
         if(input !== ''){
-            let result = ''
+            let res = ''
             try{
-                result = eval(input)
+                res = eval(input)
             } catch(err){
                 setResult('Math error')
             }
-            if (result === undefined){
+            if (res === undefined){
                 setResult('Math error')
             }else{
                 setResult(input + '=')
-                setInput(result)
+                setInput(res)
             }
         }
        }else if(value === 'C'){
@@ -30,7 +30,7 @@ const Layout = (props) => {
         setResult('')
        } else if(value === 'DEL'){
         let str = input
-        str = str.substr(0, str.length-1)
+        str = str.substring(0, str.length - 1)
         setInput(str)
        } else if(input === '0') {
          setInput(value)
